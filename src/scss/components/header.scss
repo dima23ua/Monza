@@ -1,0 +1,149 @@
+//====header
+//====header-top
+.header-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+}
+//====logo
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 140px;
+	height: 40px;
+}
+.logo-svg {
+	fill: var(--silver);
+	&:hover {
+		fill: var(--lred);
+	}
+}
+//navigation
+.navigation {
+	display: flex;
+	align-items: center;
+}
+.nav-menu {
+	display: flex;
+	align-items: center;
+
+		&__item {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 133%;
+			margin-left: 40px;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+
+		&__link {
+			color: var(--silver);
+			transition: .2s linear;
+			&:hover {
+				color: var(--lred);
+			}
+		}
+}
+//====social
+.social {
+	display: flex;
+	align-items: center;
+	
+		&__icon {
+			margin-left: 30px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+			&:hover .social-icon-svg{
+				transition: .2s linear;
+				fill: var(--lred);
+			}
+		}
+}
+
+.social-icon-svg {
+	width: 18px;
+	height: 18px;
+	fill: var(--silver);
+}
+.soc {
+	margin-left: 45px;
+}
+//====header-bottom
+.header-bottom {
+	max-width: 645px;
+	color: var(--silver);
+	padding-bottom: 145px;
+}
+//====main-title
+.main-title {
+	font-weight: 700;
+	font-size: calc(40px + 10 * (100vw / 1270));
+	line-height: 135%;
+	margin-top: 115px;
+	margin-bottom: 20px;
+}
+.header-block {
+	margin-bottom: 60px;
+
+		&__item {
+			width: 100%;
+			max-width: 295px;
+			margin-left: 20px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+
+		&__item-text {
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 135%;
+		}
+}
+//====button
+.btn {
+	// width: auto;
+	width: 100%;
+	max-width: 290px;
+	border-radius: 15px;
+	padding: 14px;
+	line-height: 135%;
+
+	&:focus {
+		box-shadow: none !important;
+	}
+}
+.btn-header {
+	border: 2px solid var(--silver);
+	color: var(--silver);
+	font-size: 20px;
+	transition: .2s linear;
+
+	&:hover {
+		border-color: var(--silver);
+		background-color: var(--silver);
+		color: var(--black);
+	}
+
+	&:active {
+		background-color: transparent;
+		color: var(--silver);
+	}
+
+	&:disabled {
+		background-color: transparent;
+		color: var(--silver);
+		opacity: 0.7;
+	}
+}
+.burger {
+	display: none;
+}
